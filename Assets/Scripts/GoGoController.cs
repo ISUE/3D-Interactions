@@ -80,6 +80,7 @@ public class GoGoController : MonoBehaviour {
                 float k =  3;
                 var diffPos =  pose.pos - initPose ;
                 diffPos *= (1f + k*Mathf.Pow(distance,2));
+                //print((1f + k * Mathf.Pow(distance, 2)));
               //  print(Mathf.Pow((Mathf.Abs(diff.z) - threshold), 2));
                 pose.pos += diffPos;
 

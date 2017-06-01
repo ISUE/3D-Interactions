@@ -130,7 +130,7 @@ public class HookController : MonoBehaviour
 
             if (i < increaseBallCount)
             {
-                ball.score++;
+                ball.score += increaseBallCount - i;
             }
             else
             {
