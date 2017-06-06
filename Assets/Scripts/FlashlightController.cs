@@ -134,7 +134,7 @@ public class FlashlightController : MonoBehaviour
         foreach (var ball in Balls)
         {
             var ballCounter = ball.GetComponent<BallCounter>();
-            ballCounter.distance = Vector3.Distance(ball.transform.position, laser.transform.FindChild("Cube").position);
+            ballCounter.distance = Vector3.Distance(ball.transform.position, laser.transform.Find("Cube").position);
         }
         var ordered = Balls.OrderBy(go => go.GetComponent<BallCounter>().distance).ToArray();
         return ordered[0];
