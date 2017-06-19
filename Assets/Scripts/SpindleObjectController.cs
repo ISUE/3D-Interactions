@@ -53,7 +53,7 @@ public class SpindleObjectController : MonoBehaviour
             {
                 var dist = Vector3.Distance(rightTransform.position, leftTransform.position);
                 float k = 6.5f * dist;
-                print(Mathf.Abs(dist - lastDist));
+             //   print(Mathf.Abs(dist - lastDist));
                 if (Mathf.Abs(dist - lastDist) > threshold)
                 {
                     if (dist > lastDist)
